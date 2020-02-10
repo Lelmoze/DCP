@@ -1,0 +1,14 @@
+import random as rd
+
+def suminlist(listr, k):
+    for i in range(len(listr)):
+        if k-listr[i] in listr[i:]:
+            return True
+    else:
+        return False
+
+def suminlistbonus(listr, k):
+    pass
+test = [rd.randint(1,15) for i in range(6)]
+print(test)
+print(suminlist(test, 12))
